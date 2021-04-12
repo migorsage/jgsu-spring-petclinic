@@ -1,3 +1,19 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  
+  "jenkins-runner.hostConfigs": {
+    "pipelines-8080": {
+      "url": "http://localhost:8080",
+      "user": "admin",
+      "password": "admin",
+      "useCrumbIssuer": true
+    }
+  },
+  "jenkins-runner.jobs": {
+    "spc": {
+      "runWith": "pipelines-8080",
+      "name": "ide",
+      "isDefault": true
+    }
+  }
 }
