@@ -12,7 +12,7 @@
   "jenkins-runner.jobs": {
     "spc": {
       "runWith": "pipelines-8080",
-      "name": "ide",
+      "name": "spc",
       "isDefault": true
     }
   }
